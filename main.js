@@ -26,7 +26,7 @@ const clearResults = function(){
     clearResults()
     const box = document.getElementById('user-input')
     const text = box.value
-    const val = biggify(text)
+    const val = biggify(Number(text))
     printValue(val)
     box.value = ''
     box.focus()
@@ -77,5 +77,16 @@ const clearResults = function(){
  * SET UP EVENT LISTENERS *
  **************************/
 
+ const big = document.querySelector('.biggify')
+ const nasa = document.querySelector('.nasafy')
+ const crazy = document.querySelector('.crazify')
+ const reverse = document.querySelector('.reversify')
+ const title = document.querySelector('.titleify')
+
+ big.addEventListener('click', bigButton)
+ nasa.addEventListener('click', nasaButton)
+ crazy.addEventListener('click', craButton)
+ reverse.addEventListener('click', revButton)
+ title.addEventListener('click', tiButton)
 
 
