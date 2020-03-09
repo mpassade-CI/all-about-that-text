@@ -20,6 +20,15 @@ const reversify = function(str) {
   return str.split('').reverse().join('');
 }
 
+const reversify2 = function(str){
+  const x = str.split(' ')
+  const y = []
+  for (let i=x.length-1; i>=0; i--){
+    y.push(x[i])
+  }
+  return y.join(' ')
+}
+
 const titleify = function(str) {
   let titleCasedWords = [];
   for (const word of str.split(' ')) {
